@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1320px;
+    font-family: 'GowunBatang';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+    /* max-width: 1730px; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    padding: 0.3% 5% 0.7%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.822)
+}
+/* 탑 버튼 꾸미기 */
+.topbutton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+.mid_header {
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.top_logo{
+    margin-top: 16px;
+}
+
+
+.mid_header a {
+    /* margin-left: 80px; */
+    margin-top: 10px;
+    font-size: 18px;
+}
+.mid_header .mid_brandname{
+    margin-top: 0;
+}
+.mid_header a:hover {
+    color: #C9AA45;
+}
+
+.mid_header img {
+    display: block;
+}
+
+.icons {
+    margin-top: 15px;
+    width: 140px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.icons a:hover{
+    opacity: 50%;
+}
+
+/* 메인화면 */
+.top{
+    width: 90%;
+    max-width: 1732px;
+    height: 781px;
+    margin: auto;
+    margin-top: 120px;
+    background: url(../images/events/events_bg.png) no-repeat center top;
+    overflow: hidden;
+    animation: show2 3s linear forwards;
+    position: relative;
+}
+@keyframes show2 {
+    0% {
+        background-size: 2200px;
+    }
+
+    100% {
+        background-size: 1730px;
+    }
+}
+.top_white{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 30px 50px 10px 30px;
+}
+.top_white p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    color:#5D0B2B;
+}
+/* 돌아가는 원형 버튼 */
+.circle_button {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    z-index: 1000;
+}
+
+.white_logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    z-index: 1000;
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle {
+    animation: round 10s linear infinite;
+}
+
+/* 메뉴 화면 */
+.menu {
+    background-color: rgb(120, 164, 191);
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 700;
+    transition: 0.7s;
+}
+
+.menu.up {
+    left: 0;
+    border-radius: 0;
+}
+
+.menu_lines {
+    width: 522px;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu li:hover {
+    filter: brightness(30%);
+}
+
+.out_button {
+    position: absolute;
+    left: 47.7%;
+    bottom: 5.8%;
+    z-index: 1000;
+}
+
+.out_button:hover {
+    filter: grayscale(10);
+}
+
+/* 전체 박스*/
+.events_wrap{
+    width: 1320px;
+    margin: auto;
+    padding-top: 200px;
+}
+h1 {
+    text-align: center;
+    background: url(../images/products/line_care.png) no-repeat center 40px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.small_text {
+    font-size: 16px;
+    font-family: 'GowunBatang';
+    color: #aaa;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+/* 이벤트 1 */
+.event1_wrap{
+    width: 1320px;
+    height: 799px;
+    background: url(../images/events/welcome_bg.png) no-repeat center top;
+    position: relative;
+    margin-top: 100px;
+}
+
+.event1_text{
+    width: 660px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 70px;
+}
+.event1_title{
+    font-size: 58px;
+    color: #E9E9DD;
+    font-weight: 200;
+}
+.coupon1{
+    margin-top: 60px;
+}
+.coupon2{
+    margin-top: 40px;
+}
+.signup{
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.signup a:hover {
+    background-color: #c9ac94;
+    color: #fff;
+    transition: 0.4s
+}
+
+.signup a {
+    display: inline-block;
+    border: 2px solid #ECE7D5;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'NotoSansKR';
+    color: #E9E9DD;
+    letter-spacing: -1px;
+}
+
+.event1_wrap::before, .event1_wrap::after, .event2_wrap::before, .event2_wrap::after{
+	content:'';
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:97%;
+	height:95%;
+	transform:translate(-50%,-50%);
+	transition:all 0.8s;
+}
+.event1_wrap::before{
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	width:0;
+}
+.event1_wrap::after{
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	height:0;
+}
+
+.event2_wrap::before{
+	border-top:1px solid #AFC281;
+	border-bottom:1px solid #AFC281;
+	width:0;
+}
+
+.event2_wrap::after{
+	border-left:1px solid #AFC281;
+	border-right:1px solid #AFC281;
+	height:0;
+}
+
+.event1_wrap:hover::before, .event2_wrap:hover::before{width:97%;}
+.event1_wrap:hover::after, .event2_wrap:hover::after{height:95%;}
+
+
+
+/* 이벤트 2 */
+.event2_wrap{
+    width: 1320px;
+    height: 799px;
+    background: url(../images/events/summer_bg.png) no-repeat center top;
+    position: relative;
+    margin-top: 100px;
+}
+.event2_title{
+    font-size: 58px;
+    color: #5A6A50;
+    font-weight: 200;
+}
+.shopnow{
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.shopnow a:hover {
+    background-color: #cbd3ad;
+    color: #fff;
+    transition: 0.4s
+}
+
+.shopnow a {
+    display: inline-block;
+    border: 2px solid #AFC281;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'NotoSansKR';
+    color:#819A72;
+    letter-spacing: -1px;
+}
+.coupon3{
+    margin-top: 50px;
+}
+.date{
+    margin-top: 50px;
+}
+
+/* 캠페인 1 */
+.campaign_title{
+    margin-top: 200px;
+}
+
+.event3_wrap{
+    width: 1320px;
+    height: 799px;
+    background: url(../images/events/recycle_bg.png) no-repeat center top;
+    position: relative;
+    margin-top: 100px;
+}
+.campaign_text{
+    margin-top: 15px;
+}
+.recycle_left{
+    display: inline-block;
+    font-size: 58px;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 130px;
+}
+.recycle_right{
+    position: absolute;
+    width: 660px;
+    top:0;
+    right:0;
+    text-align: center;
+}
+h4{
+    font-size: 28px;
+    font-family: 'GyeonggiBatang';
+    color: #FCF9B0;
+    margin-top: 90px;
+}
+h5{
+    font-size: 15px;
+    line-height: 33px;
+    color: #FCF9B0;
+    margin-top: 50px;
+    font-weight: 300;
+}
+.recycle_right ul{
+    margin-left:20px;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.recycle_right li{
+    text-align: center;
+}
+.recycle_right p{
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 23px;
+    color: #EBECC5;
+    font-family: 'NotoSansKR';
+}
+
+.enroll{
+    padding-top: 20px;
+}
+.enroll a{
+    display: inline-block;
+    border: 2px solid #EBCD55;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'NotoSansKR';
+    color:#FCF9B0;
+    letter-spacing: -1px;
+}
+.enroll a:hover {
+    background-color: #cec391;
+    color: #fff;
+    transition: 0.4s
+}
+
+.left_re{
+    background:linear-gradient(to right, rgba(255,255,255,0) 50%, #b29f73a6 50%);
+    background-size:200%;
+    transition:2s;
+}
+.event3_wrap:hover .left_re{
+    background-position:-100% 0;
+}
+
+
+/* 캠페인 2 */
+.event4_wrap{
+    width: 1320px;
+    height: 799px;
+    background: url(../images/events/plogging_bg.png) no-repeat center top;
+    position: relative;
+    margin-top: 100px;
+}
+.left_plog{
+    margin-left: 160px;
+    color: #fff;
+}
+.h4_plog{
+    padding-top: 20px;
+    color: #E5FBF9;
+}
+.h5_plog{
+    color: #D2F5F3;
+}
+.plogging_ul{
+    padding-top: 10px;
+}
+.plogging_ul p{
+    color:#E5FBF9;
+}
+.plog{
+    padding-top: 35px;
+}
+.plog a{
+    display: inline-block;
+    border: 2px solid #96CCDE;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'NotoSansKR';
+    color:#D6F9F6;
+    letter-spacing: -1px;
+}
+.plog a:hover {
+    background-color: #8dacb4;
+    color: #fff;
+    transition: 0.4s
+}
+
+.left_plog{
+    background:linear-gradient(to right, rgba(255,255,255,0) 50%, hwb(193 60% 17% / 0.671) 50%);
+    background-size:200%;
+    transition:2s;
+}
+.event4_wrap:hover .left_plog{
+    background-position:-100% 0;
+}
+
+/* 푸터 */
+.footer{
+    width: 100%;
+    height: 317px;
+    background: url(../images/footer_bg.png) no-repeat center top/cover;
+    margin-top: 200px;
+}
+.footer_wrap{
+    width: 1320px;
+    margin: auto;
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_brandname{
+    margin-bottom: 20px;
+}
+.footer_text1 p{
+    /* font-family: '맑은고딕'; */
+    margin-top: 10px;
+}
+.copyright{
+    margin-top: 20px;
+}
+.footer_text2{
+    line-height: 30px;
+    padding-top: 20px;
+}
+.footer_text2 a{
+    margin-right: 10px;
+}
+.footer_text2 a:hover{
+    opacity: 50%;
+}

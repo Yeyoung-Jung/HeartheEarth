@@ -1,0 +1,517 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1320px;
+    font-family: 'GowunBatang';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+    /* max-width: 1730px; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    padding: 0.3% 5% 0.7%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.822)
+}
+.top_logo{
+    margin-top: 16px;
+}
+
+/* 탑 버튼 꾸미기 */
+.topbutton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+
+.mid_header {
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.mid_header a {
+    /* margin-left: 80px; */
+    margin-top: 10px;
+    font-size: 18px;
+}
+.mid_header .mid_brandname{
+    margin-top: 0;
+}
+.mid_header a:hover {
+    color: #C9AA45;
+}
+
+.mid_header img {
+    display: block;
+}
+
+.icons {
+    margin-top: 15px;
+    width: 140px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.icons a:hover{
+    opacity: 50%;
+}
+
+/* 메인화면 */
+.top{
+    width: 90%;
+    max-width: 1732px;
+    height: 781px;
+    margin: auto;
+    margin-top: 120px;
+    background: url(../images/products/products_bg.png) no-repeat center top;
+    overflow: hidden;
+    animation: show2 3s linear forwards;
+    position: relative;
+}
+@keyframes show2 {
+    0% {
+        background-size: 2200px;
+    }
+
+    100% {
+        background-size: 1730px;
+    }
+}
+.top_white{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 30px 30px 10px 20px;
+}
+.top_white p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    color:#487C74;
+}
+/* 돌아가는 원형 버튼 */
+.circle_button {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    z-index: 1000;
+}
+
+.white_logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    z-index: 1000;
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle {
+    animation: round 10s linear infinite;
+}
+/* 메뉴 화면 */
+.menu {
+    background-color: rgb(120, 164, 191);
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 700;
+    transition: 0.7s;
+}
+
+.menu.up {
+    left: 0;
+    border-radius: 0;
+}
+
+.menu_lines {
+    width: 522px;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu li:hover {
+    filter: brightness(30%);
+}
+
+.out_button {
+    position: absolute;
+    left: 47.7%;
+    bottom: 5.8%;
+    z-index: 1000;
+}
+
+.out_button:hover {
+    filter: grayscale(10);
+}
+
+/* 전체 박스*/
+.care_wrap{
+    width: 1320px;
+    margin: auto;
+    padding-top: 200px;
+
+}
+
+/* 스킨 케어 */
+h1 {
+    text-align: center;
+    background: url(../images/products/line_care.png) no-repeat center 50px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.small_text {
+    font-size: 16px;
+    font-family: 'GowunBatang';
+    color: #aaa;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+.banner{
+    width: 1320px;
+    margin: auto;
+    margin-top: 100px;
+    height: 321px;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 105px;
+    padding-left: 110px;
+}
+.calendula_banner{
+      background: url(../images/products/calendula_bg.jpg) no-repeat 0 0/ 1500px; 
+      animation: bg 10s linear forwards infinite alternate;
+}
+@keyframes bg{
+    0%{background-position: 0 0;}
+    100%{background-position: 100% 0%;}
+}
+.sub_title{
+    font-size: 38px;
+    padding-left: 5px;
+
+}
+.main_title{
+    font-size: 96px;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+.calen{
+    color: #CC7400;
+}
+.calen2{
+  color:#4B2805;
+}
+.calen2{
+    font-size: 15px;
+    position: absolute;
+    top: 190px;
+    left: 580px;
+}
+.products_pics, .products_pics2{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    position: relative;
+}
+
+
+.new_text{
+    width: 361px;
+    height: 361px;
+    margin: 32px 28px 32px 0;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 1s;
+}
+.new_a{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+.new_a li{
+    margin-right: 8px;
+}
+.new_a li:hover a{
+    opacity: 50%;
+}
+.new_price{
+    color: #C9AA45;
+}
+.products_pics li:hover .new_text{
+    opacity: 1;
+}
+.new_top{
+    padding-top: 120px;
+}
+.new_text p{
+    margin-bottom: 15px;
+}
+.view_more{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0 10px;
+    border: 0.5px solid #d1c9a8;
+    transition: 0.5s;
+}
+.view_more:hover, .view_more2:hover{
+    background-color: #d1c9a8;
+    color: #fff;
+}
+
+/* 티트리 */
+
+.teatree_banner{
+    background: url(../images/products/teatree_bg.jpg) no-repeat 0 0/ 1500px; 
+    animation: bg 10s linear forwards infinite alternate;
+}
+.teatree{
+    color: #7E8D6D;
+}
+.teatree2{
+    color: #506438;
+    font-size: 15px;
+    position: absolute;
+    top: 195px;
+    left: 550px;
+}
+.new_text2{
+    width: 275px;
+    height: 276px;
+    margin: 23px 10px 15px 0;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 1s;
+}
+.products_pics2 li:hover .new_text2{
+    opacity: 1;
+}
+.new_top2{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+.view_more2{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 0 10px;
+    border: 0.5px solid #d1c9a8;
+    transition:0.5s
+}
+
+/* 스킨 밸런스 */
+.balance_banner{
+    background: url(../images/products/skincare_bg.jpg) no-repeat 0 0/1500px; 
+    animation: bg 10s linear forwards infinite alternate;
+}
+.balance{
+    color: #fff;
+}
+.balance2{
+    color: #4C5D5D;
+    font-size: 15px;
+    position: absolute;
+    top: 195px;
+    left: 700px;
+}
+
+/* 헤어 케어 */
+.haircare{
+    margin-top: 200px;
+}
+.seaweed_banner{
+    background: url(../images/products/seaweed_bg.jpg) no-repeat 0 50%/1500px; 
+    animation: bg2 10s linear forwards infinite alternate;
+}
+
+@keyframes bg2{
+    0%{background-position: 0 50%;}
+    100%{background-position: 100% 50%;}
+}
+.seaweed{
+    color: #B5D3E5;
+}
+.seaweed2{
+    color:#F2FAFF;
+    font-size: 15px;
+    position: absolute;
+    top: 195px;
+    left: 580px;
+}
+
+/* 바디 케어 */
+.body_banner{
+    background: url(../images/products/bodycare_bg.jpg) no-repeat 0 0/1500px; 
+    animation: bg2 10s linear forwards infinite alternate;
+}
+
+.body{
+    color:#F5FBEF;
+}
+.body2{
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 195px;
+    left: 600px;
+}
+
+/* 홈 프레그런스 */
+.homefrag{
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+    background: url(../images/products/line_frag.png) no-repeat center 40px; 
+}
+.home_banner{
+    background: url(../images/products/aroma_bg.jpg) no-repeat 0 0/1500px;
+    animation: bg2 10s linear forwards infinite alternate;
+}
+.frag{
+    color:#746139;
+}
+.frag2{
+    color:#392C03;
+    font-size: 15px;
+    position: absolute;
+    top: 195px;
+    right: 270px;
+}
+
+/* 악세사리 */
+.acc_h1{
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+    background: url(../images/products/line_acc.png) no-repeat center 40px; 
+}
+.acc_banner{
+    background: url(../images/products/acc_bg.jpg) no-repeat 0 0/1500px; 
+    animation: bg2 10s linear forwards infinite alternate;
+}
+.acc{
+    color:#607646;
+}
+.acc2{
+    color: #273D06;
+    font-size: 15px;
+    position: absolute;
+    top: 195px;
+    right: 270px;
+}
+
+/* 푸터 */
+.footer{
+    width: 100%;
+    height: 317px;
+    background: url(../images/footer_bg.png) no-repeat center top/cover;
+    margin-top: 200px;
+}
+.footer_wrap{
+    width: 1320px;
+    margin: auto;
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_brandname{
+    margin-bottom: 20px;
+}
+.footer_text1 p{
+    /* font-family: '맑은고딕'; */
+    margin-top: 10px;
+}
+.copyright{
+    margin-top: 20px;
+}
+.footer_text2{
+    line-height: 30px;
+    padding-top: 20px;
+}
+.footer_text2 a{
+    margin-right: 10px;
+}
+.footer_text2 a:hover{
+    opacity: 50%;
+}
