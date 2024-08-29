@@ -414,7 +414,7 @@ h1 {
 }
 .value1{
     margin-top: 200px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -437,7 +437,7 @@ h1 {
     background: url(../images/about/01_bg.png) no-repeat center center;
 }
 .value2{
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -486,6 +486,9 @@ h1 {
     font-size: 15px;
     line-height: 30px;
     background: url(../images/about/03_bg.png) no-repeat center center;
+}
+.value_last{
+    margin-bottom: 300px;
 }
 
 /* 푸터 */
