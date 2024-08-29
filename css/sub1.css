@@ -437,8 +437,7 @@ h1 {
     background: url(../images/about/01_bg.png) no-repeat center center;
 }
 .value2{
-    margin-top: 500px;
-    margin-bottom: 500px;
+    margin-bottom: 300px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
