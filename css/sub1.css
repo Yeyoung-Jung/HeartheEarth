@@ -447,8 +447,6 @@ h1 {
     position: relative;
 }
 .v2_text{
-    position: absolute;
-    left: 0;
     width: 1042px;
     height: 552px;
     box-sizing: border-box;
