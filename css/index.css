@@ -39,7 +39,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 100;
     padding: 0.1% 5% 0.6%;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.7);
@@ -176,12 +176,12 @@ a {
 .menu {
     background-color: rgb(120, 164, 191);
     border-radius: 50% 50% 0 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 100%;
-    z-index: 700;
+    z-index: 99;
     transition: 0.7s;
 }
 
@@ -193,7 +193,7 @@ a {
 .menu_lines {
     width: 522px;
     margin: auto;
-    padding-top: 150px;
+    padding-top: 230px;
 }
 
 .menu li {
@@ -375,7 +375,7 @@ h1 {
     position: absolute;
     right: 380px;
     top: -80px;
-    z-index: 100;
+    z-index: 3;
     animation: round 10s linear infinite;
 }
 
